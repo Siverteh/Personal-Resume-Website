@@ -1,0 +1,22 @@
+/* About.css */
+.about-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #fff; /* Adjust the background color as needed */
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Simple shadow for depth */
+}
+
+.section-title {
+    text-align: center;
+    color: #333; /* Dark grey color for the text */
+    margin-bottom: 20px;
+}
+
+.about-text {
+    color: #666; /* Lighter grey color for the text */
+    font-size: 1em;
+    line-height: 1.6; /* Spacing for line height */
+    text-align: justify; /* For justified paragraph text */
+}
