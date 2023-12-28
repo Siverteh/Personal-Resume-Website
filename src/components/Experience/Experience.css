@@ -1,0 +1,99 @@
+.experience-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20%; /* Space for the navbar */
+    padding-right: 5%;
+    background-color: #fff;
+    min-height: auto;
+}
+
+.section-title {
+    color: #173B6C; /* Dark blue for the title */
+    text-align: left;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #159DDD; /* Light blue for the underline */
+    font-size: 24px;
+}
+
+.timeline {
+    position: relative;
+    margin-left: 25px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.timeline-content {
+    position: relative;
+    padding-left: 40px;
+}
+
+.timeline-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #1F5297; /* You can change this color if needed */
+    position: absolute;
+    left: -30px;
+    top: 0;
+    z-index: 2;
+    margin-left: 11px;
+    margin-top: 20px;
+}
+
+.timeline-year {
+    background-color: #E4EDF9; /* You can change this color if needed */
+    padding: 5px 15px;
+    display: inline-block;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.timeline-company {
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 10px; /* Spacing between the company name and the description */
+    display: block; /* Company name on its own line */
+    color: #444; /* Optional: color for distinction */
+}
+
+.timeline-description {
+    font-size: 14px;
+    color: #666;
+    text-align: justify;
+    margin-top: 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 20px;
+    bottom: 20px;
+    width: 2px;
+    background-color: #1F5297; /* Updated color for the line */
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .experience-section {
+        padding: 50px 5%;
+    }
+
+    .timeline-content {
+        padding-left: 60px;
+    }
+
+    .timeline-circle {
+        left: -20px;
+    }
+
+    .timeline::before {
+        left: 0;
+    }
+}

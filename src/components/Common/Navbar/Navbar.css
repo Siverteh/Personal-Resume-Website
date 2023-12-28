@@ -1,0 +1,165 @@
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 15%; /* Adjusted width */
+    height: 100vh;
+    background-color: #040B14;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 10px solid #2C2F3F;
+}
+
+/* Adjustments to ensure no other styles are interfering */
+.profile-pic-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.profile-name {
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.nav-links a {
+    color: #A8A9B4; /* Original color of the text */
+    text-decoration: none;
+    margin: 15px 0; /* Increased spacing */
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    width: 100%;
+    padding-left: 50px;
+    transition: color 0.0s; /* Smooth transition for color changes */
+}
+
+.nav-links a span {
+    margin-left: 8px;
+    transition: color 0.0s; /* Smooth transition for color changes */
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #159DDD; /* Blue color for icon and text */
+}
+
+.nav-links a:hover span,
+.nav-links a.active span {
+    color: #FFFFFF; /* White color for text */
+}
+
+/* Add specific hover styles for icons if needed */
+.nav-links a:hover .fa,
+.nav-links a:hover svg,
+.nav-links a.active .fa,
+.nav-links a.active svg {
+    color: #159DDD; /* Blue color for icons */
+}
+
+.nav-links a:hover span {
+    color: #FFFFFF; /* White color for text when hovered */
+}
+
+.resume-container {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.resume-button {
+    color: #ccc;
+    background-color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.resume-button:hover,
+.resume-button:focus {
+    color: #04c2c9;
+    border-color: #04c2c9;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 60px;
+    }
+
+    .profile-pic,
+    .social-icons a,
+    .nav-links a,
+    .resume-button {
+        font-size: 16px;
+    }
+
+    .profile-name,
+    .nav-links a span,
+    .resume-button span {
+        display: none;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+    }
+
+    .resume-button {
+        width: 100%;
+        padding: 0.8em;
+    }
+
+    .social-icons {
+        flex-direction: column;
+    }
+}

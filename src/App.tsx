@@ -1,26 +1,63 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+import Navbar from './components/Common/Navbar/Navbar';
+import About from './components/About/About';
+import Education from './components/Education/Education';
+import Experience from './components/Experience/Experience';
+import Contact from './components/Contact/Contact';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+        const [activeSection, setActiveSection] = useState('');
+
+        useEffect(() => {
+                const handleScroll = () => {
+                        const sections = ['home', 'about', 'skills', 'experience', 'education', 'projects', 'contact'];
+                        let currentSection = '';
+
+                        for (const section of sections) {
+                                const element = document.getElementById(section);
+                                if (element) {
+                                        const rect = element.getBoundingClientRect();
+                                        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+                                                currentSection = section;
+                                                break;
+                                        }
+                                }
+                        }
+
+                        setActiveSection(currentSection);
+                };
+
+                window.addEventListener('scroll', handleScroll);
+                return () => window.removeEventListener('scroll', handleScroll);
+        }, []);
+
+        return (
+            <div className="App">
+                    <Navbar activeSection={activeSection} />
+                    <section id="home" className="section-home">
+                            {/* Home Section Content */}
+                    </section>
+                    <section id="about" className="section-about">
+                            <About />
+                    </section>
+                    <section id="skills" className="section-skills">
+                            {/* Skills Section Content */}
+                    </section>
+                    <section id="experience" className="section-experience">
+                            <Experience />
+                    </section>
+                    <section id="education" className="section-education">
+                            <Education />
+                    </section>
+                    <section id="projects" className="section-projects">
+                            <About />
+                    </section>
+                    <section id="contact" className="section-contact">
+                            <Contact />
+                    </section>
+            </div>
+        );
 }
 
 export default App;

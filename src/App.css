@@ -1,38 +1,40 @@
 .App {
-  text-align: center;
+  /* Removed text-align to prevent conflict with child components */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Reset default styles for each section to prevent unexpected padding/margins */
+.section-home,
+.section-about,
+.section-skills {
+  margin: 0; /* Reset any default margins */
+  padding: 0; /* Reset any default padding */
+  min-height: 100vh; /* Adjust the height as needed */
+  box-sizing: border-box; /* Include padding in the box model calculation */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section-education,
+.section-experience,
+.section-contact,
+.section-projects{
+  margin: 0; /* Reset any default margins */
+  padding: 0; /* Reset any default padding */
+  min-height: auto;
+  box-sizing: border-box; /* Include padding in the box model calculation */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Styles for individual sections - customize as per your design */
+.section-home {
+  background-color: #f8f8f8;
 }
 
-.App-link {
-  color: #61dafb;
+.section-about {
+  /* Ensure that background color fills the section */
+  background-color: #fff; /* Change this as per your desired background color */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ... similarly style other sections ... */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Responsive styles if needed */
 }

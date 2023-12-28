@@ -1,0 +1,98 @@
+.education-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20%; /* Space for the navbar */
+    padding-right: 5%;
+    min-height: auto;
+    background-color: #F5F8FD; /* Light gray for contrast */
+}
+
+.section-title {
+    text-align: left;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #333;
+    font-size: 24px;
+}
+
+.timeline {
+    position: relative;
+    margin-left: 25px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the start of the container */
+    margin-bottom: 50px; /* Space between timeline items */
+}
+
+.timeline-content {
+    position: relative; /* To position the circle relative to content */
+    padding-left: 40px; /* Space from the timeline line to the text */
+}
+
+.timeline-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #333;
+    position: absolute;
+    left: -30px; /* Adjust to align with the timeline */
+    top: 0; /* Align with the top of the content */
+    z-index: 2; /* Above the line */
+    margin-left: 11px;
+    margin-top: 20px;
+
+}
+
+.timeline-year {
+    background-color: #e6e6e6;
+    padding: 5px 15px;
+    display: inline-block;
+    margin-top: -10px; /* Reduced spacing between the title and the year box */
+    margin-bottom: 10px; /* Maintain some space between the year box and university name */
+}
+
+.timeline-university {
+    font-style: italic;
+    font-weight: bold; /* Keep the university name standing out */
+    color: #444; /* Optional color change for distinction */
+    margin-bottom: 15px; /* Increased spacing between the university name and the paragraph */
+    display: block; /* Keeps the university name on its own line */
+}
+
+.timeline-description {
+    font-size: 14px;
+    color: #666;
+    text-align: justify; /* Adjust text alignment if needed */
+    margin-top: 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: -10px; /* Align with the center of the circles */
+    top: 20px; /* Start slightly lower to avoid protruding from top circle */
+    bottom: 20px; /* Stop slightly higher to avoid extending past bottom circle */
+    width: 2px;
+    background-color: #333;
+    z-index: 1; /* Below the circles */
+}
+
+@media (max-width: 768px) {
+    .education-section {
+        padding: 50px 5%;
+    }
+
+    .timeline-content {
+        padding-left: 60px;
+    }
+
+    .timeline-circle {
+        left: -20px;
+    }
+
+    .timeline::before {
+        left: 0; /* Adjust as per the new layout */
+    }
+}

@@ -1,0 +1,138 @@
+.contact-section {
+    padding-left: 20%;
+    padding-right: 5%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #F5F8FD;
+    box-sizing: border-box;
+    min-height: auto;
+}
+
+.section-title {
+    text-align: left;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #333;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.contact-info-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex-basis: 40%;
+}
+
+.contact-form-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex-basis: 60%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 48%;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.form-group textarea {
+    resize: none; /* Optional: prevents resizing of textarea */
+    height: 200px;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center; /* Center the button */
+    padding-top: 10px; /* Space above the button */
+}
+
+.contact-form-card input,
+.contact-form-card textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form-card button {
+    background-color: #0056b3;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.contact-form-card button:hover {
+    background-color: #003d82;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.contact-info-item strong {
+    font-size: 1.5em;
+    margin-right: 0.5em;
+}
+
+.contact-info-item p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.contact-icon {
+    font-size: 2em;
+    margin-right: 0.5em;
+    color: #159DDD;
+}
+
+.google-maps-embed iframe {
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-info-card,
+    .contact-form-card {
+        flex-basis: auto;
+        margin-bottom: 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        flex-basis: auto;
+    }
+}

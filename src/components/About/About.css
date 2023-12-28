@@ -1,22 +1,85 @@
-/* About.css */
 .about-section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    background-color: #fff; /* Adjust the background color as needed */
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Simple shadow for depth */
+    padding-left: 20%; /* Spacing from the left */
+    padding-right: 5%; /* Spacing from the right */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #fff;
+    box-sizing: border-box;
+    min-height: auto;
 }
 
 .section-title {
-    text-align: center;
-    color: #333; /* Dark grey color for the text */
+    color: #173B6C; /* Title color */
+    text-align: left;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #159DDD !important;
+}
+
+.above-image-text {
+    margin-top: 0;
+    font-size: 1.1em;
     margin-bottom: 20px;
 }
 
-.about-text {
-    color: #666; /* Lighter grey color for the text */
-    font-size: 1em;
-    line-height: 1.6; /* Spacing for line height */
-    text-align: justify; /* For justified paragraph text */
+.about-main {
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-image {
+    flex: 0 1 auto;
+    margin-right: 40px; /* Adjust the space between the image and the details */
+    max-width: 400px; /* Adjust the size of the photo */
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-details {
+    flex: 1;
+}
+
+.about-details h3 {
+    color: #173B6C;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.details-grid p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 20px;
+    }
+
+    .about-main {
+        flex-direction: column;
+    }
+
+    .about-image {
+        margin: 0 auto 20px; /* Center image and add bottom margin on mobile */
+        max-width: 100%; /* Full width image on mobile */
+    }
+
+    .about-details {
+        flex: 1;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
 }

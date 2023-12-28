@@ -1,11 +1,25 @@
+/* index.css */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4; /* Light grey background */
 }
+
+/* Global section styles */
+.section {
+  padding: 60px 0; /* Add padding to top and bottom */
+  margin-top: 60px; /* Add margin-top if navbar is fixed */
+}
+
+/* Global heading styles */
+.section h2 {
+  text-align: center; /* Center align all section headings */
+  margin-bottom: 1em; /* Spacing below headings */
+}
+
+/* ... more global styles ... */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
