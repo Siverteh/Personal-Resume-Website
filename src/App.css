@@ -4,8 +4,7 @@
 
 /* Reset default styles for each section to prevent unexpected padding/margins */
 .section-home,
-.section-about,
-.section-skills {
+.section-about {
   margin: 0; /* Reset any default margins */
   padding: 0; /* Reset any default padding */
   min-height: 100vh; /* Adjust the height as needed */
@@ -15,6 +14,7 @@
 .section-education,
 .section-experience,
 .section-contact,
+.section-skills,
 .section-projects{
   margin: 0; /* Reset any default margins */
   padding: 0; /* Reset any default padding */

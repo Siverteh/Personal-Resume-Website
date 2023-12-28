@@ -59,11 +59,11 @@ const Contact = () => {
                     <form ref={formRef} onSubmit={sendEmail}>
                         <div className="form-row">
                             <div className="form-group">
-                                <label htmlFor="name">Name</label>
+                                <label htmlFor="name">Your Name</label>
                                 <input type="text" id="name" name="name" required />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="email">Email</label>
+                                <label htmlFor="email">Your Email</label>
                                 <input type="email" id="email" name="email" required />
                             </div>
                         </div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Common/Navbar/Navbar';
 import About from './components/About/About';
+import Skills from './components/Skills/Skills';
 import Education from './components/Education/Education';
 import Experience from './components/Experience/Experience';
 import Contact from './components/Contact/Contact';
@@ -42,7 +43,7 @@ const App = () => {
                             <About />
                     </section>
                     <section id="skills" className="section-skills">
-                            {/* Skills Section Content */}
+                            <Skills />
                     </section>
                     <section id="experience" className="section-experience">
                             <Experience />
