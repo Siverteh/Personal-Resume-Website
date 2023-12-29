@@ -55,7 +55,7 @@ const Projects: React.FC = () => {
 
     return (
         <div className="projects-section">
-            <h2 className="section-title">Portfolio</h2>
+            <h2 className="section-title">Projects</h2>
             <div className="projects-container">
                 {projects.map((project) => (
                     <ProjectCard
