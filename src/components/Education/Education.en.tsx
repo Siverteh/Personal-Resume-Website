@@ -1,7 +1,7 @@
 import React from 'react';
 import './Education.css';
 
-const Education = () => {
+const EducationEn = () => {
     return (
         <div className="education-section">
             <h2 className="section-title">Education</h2>
@@ -31,4 +31,4 @@ const Education = () => {
     );
 };
 
-export default Education;
+export default EducationEn;

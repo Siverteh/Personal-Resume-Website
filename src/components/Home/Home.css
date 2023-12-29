@@ -1,0 +1,65 @@
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* This will make sure that your landing page covers the full viewport height */
+    background: url('../../assets/images/background.jpg') no-repeat center center/cover; /* Update with your desired background image */
+    color: #fff; /* This color will be used for the text */
+    padding-left: 20%; /* Spacing from the left */
+    padding-right: 5%; /* Spacing from the right */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #fff;
+    box-sizing: border-box;
+    min-height: auto;
+}
+
+.intro-wrapper {
+    text-align: center;
+    max-width: 600px; /* Adjust the width as per your design preference */
+}
+
+.home-container h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    text-decoration: none;
+    background-color: #159DDD; /* This is a nice shade of blue, you can use your own color */
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-block; /* For proper padding and margins */
+}
+
+.cta-button:hover {
+    background-color: #0d7ba0; /* A darker shade for hover state */
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-container {
+        padding: 0 10%;
+    }
+
+    .home-container h1 {
+        font-size: 2rem;
+    }
+
+    .home-container p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.6rem 1.5rem;
+    }
+}

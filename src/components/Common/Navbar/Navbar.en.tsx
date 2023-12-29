@@ -3,15 +3,20 @@ import './Navbar.css';
 import { FaHome, FaUser, FaWrench, FaBriefcase, FaGraduationCap, FaProjectDiagram, FaEnvelope, FaDownload } from 'react-icons/fa';
 import { AiFillGithub, AiFillLinkedin, AiFillFacebook, AiFillInstagram } from 'react-icons/ai';
 import { SiDiscord } from 'react-icons/si';
-import profilePicture from '../../../assets/images/profilepicture.jpg'; // Update the path as necessary
+import profilePicture from '../../../assets/images/profilepicture.jpg';
+import norwegianFlag from '../../../assets/images/norsk_flagg.png'; // Path to your Norwegian flag icon
 
 interface NavbarProps {
     activeSection: string;
+    toggleLanguage: () => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
+const NavbarEn: React.FC<NavbarProps> = ({ activeSection, toggleLanguage }) => {
     return (
         <div className="navbar">
+            <button className="language-toggle" onClick={toggleLanguage}>
+                <img src={norwegianFlag} alt="Norwegian" />
+            </button>
             <div className="profile-section">
                 <img src={profilePicture} alt="Profile" className="profile-pic" />
                 <div className="profile-name">Sivert Husebø</div>
@@ -41,4 +46,4 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
     );
 };
 
-export default Navbar;
+export default NavbarEn;

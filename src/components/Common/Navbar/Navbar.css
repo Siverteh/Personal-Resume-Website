@@ -36,6 +36,20 @@
     width: 100%;
 }
 
+.language-toggle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.language-toggle img {
+    width: 30px; /* Adjust as needed */
+    height: auto;
+}
+
 .profile-name {
     color: #fff;
     font-size: 1.5em;

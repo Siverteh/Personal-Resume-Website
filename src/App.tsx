@@ -1,15 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Common/Navbar/Navbar';
-import About from './components/About/About';
-import Skills from './components/Skills/Skills';
-import Education from './components/Education/Education';
-import Experience from './components/Experience/Experience';
-import Projects from './components/Projects/Projects';
-import Contact from './components/Contact/Contact';
+import NavbarEn from './components/Common/Navbar/Navbar.en';
+import NavbarNo from './components/Common/Navbar/Navbar.no';
+import HomeEn from './components/Home/Home.en';
+import HomeNo from './components/Home/Home.no';
+import AboutEn from './components/About/About.en';
+import AboutNo from './components/About/About.no';
+import SkillsEn from './components/Skills/Skills.en';
+import SkillsNo from './components/Skills/Skills.no';
+import EducationEn from './components/Education/Education.en';
+import EducationNo from './components/Education/Education.no';
+import ExperienceEn from './components/Experience/Experience.en';
+import ExperienceNo from './components/Experience/Experience.no';
+import ProjectsEn from './components/Projects/Projects.en';
+import ProjectsNo from './components/Projects/Projects.no';
+import ContactEn from './components/Contact/Contact.en';
+import ContactNo from './components/Contact/Contact.no';
 import './App.css';
 
 const App = () => {
-        const [activeSection, setActiveSection] = useState('');
+    const [activeSection, setActiveSection] = useState('');
+    const [language, setLanguage] = useState('no'); // 'en' for English, 'no' for Norwegian
 
     useEffect(() => {
         const handleScroll = () => {
@@ -29,7 +39,6 @@ const App = () => {
 
             setActiveSection(currentSection);
 
-            // Update URL without reloading the page
             if (currentSection && window.location.hash !== `#${currentSection}`) {
                 window.history.pushState(null, '', `#${currentSection}`);
             }
@@ -39,33 +48,37 @@ const App = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const toggleLanguage = () => {
+        setLanguage(language === 'en' ? 'no' : 'en');
+    };
 
     return (
-            <div className="App">
-                    <Navbar activeSection={activeSection} />
-                    <section id="home" className="section-home">
-                            {/* Home Section Content */}
-                    </section>
-                    <section id="about" className="section-about">
-                            <About />
-                    </section>
-                    <section id="skills" className="section-skills">
-                            <Skills />
-                    </section>
-                    <section id="experience" className="section-experience">
-                            <Experience />
-                    </section>
-                    <section id="education" className="section-education">
-                            <Education />
-                    </section>
-                    <section id="projects" className="section-projects">
-                            <Projects />
-                    </section>
-                    <section id="contact" className="section-contact">
-                            <Contact />
-                    </section>
-            </div>
-        );
+        <div className="App">
+            {language === 'en' ? (
+                <>
+                    <NavbarEn activeSection={activeSection} toggleLanguage={toggleLanguage} />
+                    <section id="home" className="section-home"><HomeEn /></section>
+                    <section id="about" className="section-about"><AboutEn /></section>
+                    <section id="skills" className="section-skills"><SkillsEn /></section>
+                    <section id="experience" className="section-experience"><ExperienceEn /></section>
+                    <section id="education" className="section-education"><EducationEn /></section>
+                    <section id="projects" className="section-projects"><ProjectsEn /></section>
+                    <section id="contact" className="section-contact"><ContactEn /></section>
+                </>
+            ) : (
+                <>
+                    <NavbarNo activeSection={activeSection} toggleLanguage={toggleLanguage} />
+                    <section id="home" className="section-home"><HomeNo /></section>
+                    <section id="about" className="section-about"><AboutNo /></section>
+                    <section id="skills" className="section-skills"><SkillsNo /></section>
+                    <section id="experience" className="section-experience"><ExperienceNo /></section>
+                    <section id="education" className="section-education"><EducationNo /></section>
+                    <section id="projects" className="section-projects"><ProjectsNo /></section>
+                    <section id="contact" className="section-contact"><ContactNo /></section>
+                </>
+            )}
+        </div>
+    );
 }
 
 export default App;

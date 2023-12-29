@@ -1,7 +1,7 @@
 import React from 'react';
 import './Skills.css';
 
-const Skills = () => {
+const SkillsEn = () => {
     const skillSet = [
         { skill: 'Back-end Development', level: 85 },
         { skill: 'Front-end Development', level: 65 },
@@ -39,4 +39,4 @@ const Skills = () => {
     );
 };
 
-export default Skills;
+export default SkillsEn;

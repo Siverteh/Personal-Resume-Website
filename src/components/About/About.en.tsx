@@ -2,7 +2,7 @@ import React from 'react';
 import './About.css';
 import yourPhoto from '../../assets/images/profilepicture.jpg'; // Ensure this is the correct path to your image
 
-const About = () => {
+const AboutEn = () => {
     return (
         <div className="about-section">
             <h2 className="section-title">About Me</h2>
@@ -42,4 +42,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default AboutEn;

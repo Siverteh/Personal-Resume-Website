@@ -3,7 +3,7 @@ import './Contact.css';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 
-const Contact = () => {
+const ContactEn = () => {
     const mapEmbedHtml = {
         __html: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2094.024181217998!2d8.590663177219982!3d58.342393389625535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4647ee638f1d47c1%3A0x323c2de197273549!2sTorvet%203%2C%204876%20Grimstad!5e0!3m2!1sno!2sno!4v1703773670766!5m2!1sno!2sno" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
     };
@@ -85,4 +85,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default ContactEn;
