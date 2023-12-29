@@ -1,0 +1,55 @@
+.projects-section {
+    padding: 50px 5% 50px 20%; /* Adjusted spacing to match About.css */
+    background-color: #fff;
+    box-sizing: border-box;
+    min-height: auto;
+}
+
+.section-title {
+    color: #173B6C; /* Title color */
+    text-align: left;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #159DDD !important;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust spacing between cards */
+    gap: 20px; /* Space between cards */
+}
+
+.project-card {
+    flex-basis: calc(33.333% - 20px); /* Three cards per row, minus the gap */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional shadow for depth */
+    margin-bottom: 20px; /* Space below each card */
+    cursor: pointer; /* Indicates the card is clickable */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; /* Rounded corners for the image */
+}
+
+.project-info {
+    padding: 20px;
+    text-align: center; /* Center the text below the image */
+}
+
+@media (max-width: 768px) {
+    .projects-section {
+        padding: 20px;
+    }
+
+    .project-card {
+        flex-basis: 100%; /* Full width cards on mobile */
+    }
+}

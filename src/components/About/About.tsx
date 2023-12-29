@@ -27,7 +27,7 @@ const About = () => {
                         <p><strong>Skills:</strong> System Architecture, Algorithms</p>
                         <p><strong>Favorite languages:</strong> C++, Python</p>
                         <p><strong>Status:</strong> Going to have an Internship for NorKart</p>
-                        <p><strong>Phone:</strong> +4746855244</p>
+                        <p><strong>Phone:</strong> +47 468 552 44</p>
                         <p><strong>Email:</strong> sivertespelandhusebo@gmail.com</p>
                     </div>
                     <p className="details-conclusion">

@@ -4,36 +4,43 @@ import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Education from './components/Education/Education';
 import Experience from './components/Experience/Experience';
+import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import './App.css';
 
 const App = () => {
         const [activeSection, setActiveSection] = useState('');
 
-        useEffect(() => {
-                const handleScroll = () => {
-                        const sections = ['home', 'about', 'skills', 'experience', 'education', 'projects', 'contact'];
-                        let currentSection = '';
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = ['home', 'about', 'skills', 'experience', 'education', 'projects', 'contact'];
+            let currentSection = '';
 
-                        for (const section of sections) {
-                                const element = document.getElementById(section);
-                                if (element) {
-                                        const rect = element.getBoundingClientRect();
-                                        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
-                                                currentSection = section;
-                                                break;
-                                        }
-                                }
-                        }
+            for (const section of sections) {
+                const element = document.getElementById(section);
+                if (element) {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+                        currentSection = section;
+                        break;
+                    }
+                }
+            }
 
-                        setActiveSection(currentSection);
-                };
+            setActiveSection(currentSection);
 
-                window.addEventListener('scroll', handleScroll);
-                return () => window.removeEventListener('scroll', handleScroll);
-        }, []);
+            // Update URL without reloading the page
+            if (currentSection && window.location.hash !== `#${currentSection}`) {
+                window.history.pushState(null, '', `#${currentSection}`);
+            }
+        };
 
-        return (
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+
+    return (
             <div className="App">
                     <Navbar activeSection={activeSection} />
                     <section id="home" className="section-home">
@@ -52,7 +59,7 @@ const App = () => {
                             <Education />
                     </section>
                     <section id="projects" className="section-projects">
-                            <About />
+                            <Projects />
                     </section>
                     <section id="contact" className="section-contact">
                             <Contact />
