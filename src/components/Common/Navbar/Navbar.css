@@ -77,7 +77,7 @@
     margin-top: 10px;
 }
 
-.nav-links a {
+.nav-links a  {
     color: #A8A9B4; /* Original color of the text */
     text-decoration: none;
     margin: 15px 0; /* Increased spacing */

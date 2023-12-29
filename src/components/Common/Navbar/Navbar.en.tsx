@@ -12,6 +12,13 @@ interface NavbarProps {
 }
 
 const NavbarEn: React.FC<NavbarProps> = ({ activeSection, toggleLanguage }) => {
+
+    const scrollToSection = (sectionId: string, event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+        event.preventDefault(); // Prevent default anchor link behavior
+        const section = document.getElementById(sectionId);
+        section?.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <div className="navbar">
             <button className="language-toggle" onClick={toggleLanguage}>
@@ -29,17 +36,20 @@ const NavbarEn: React.FC<NavbarProps> = ({ activeSection, toggleLanguage }) => {
                 <a href="https://discord.com/users/youruserid" target="_blank" rel="noopener noreferrer"><SiDiscord /></a>
             </div>
             <div className="nav-links">
-                <a href="#home" className={activeSection === 'home' ? 'active' : ''}><FaHome /><span>Home</span></a>
-                <a href="#about" className={activeSection === 'about' ? 'active' : ''}><FaUser /><span>About</span></a>
-                <a href="#skills" className={activeSection === 'skills' ? 'active' : ''}><FaWrench /><span>Skills</span></a>
-                <a href="#experience" className={activeSection === 'experience' ? 'active' : ''}><FaBriefcase /><span>Experience</span></a>
-                <a href="#education" className={activeSection === 'education' ? 'active' : ''}><FaGraduationCap /><span>Education</span></a>
-                <a href="#projects" className={activeSection === 'projects' ? 'active' : ''}><FaProjectDiagram /><span>Projects</span></a>
-                <a href="#contact" className={activeSection === 'contact' ? 'active' : ''}><FaEnvelope /><span>Contact</span></a>
+                <a href="#home" onClick={(e) => scrollToSection('home', e)}><FaHome/><span>Home</span></a>
+                <a href="#about" onClick={(e) => scrollToSection('about', e)}><FaUser/><span>About</span></a>
+                <a href="#skills" onClick={(e) => scrollToSection('skills', e)}><FaWrench/><span>Skills</span></a>
+                <a href="#experience"
+                   onClick={(e) => scrollToSection('experience', e)}><FaBriefcase/><span>Experience</span></a>
+                <a href="#education"
+                   onClick={(e) => scrollToSection('education', e)}><FaGraduationCap/><span>Education</span></a>
+                <a href="#projects"
+                   onClick={(e) => scrollToSection('projects', e)}><FaProjectDiagram/><span>Projects</span></a>
+                <a href="#contact" onClick={(e) => scrollToSection('contact', e)}><FaEnvelope/><span>Contact</span></a>
             </div>
             <div className="resume-container">
                 <a href="path-to-your-resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
-                    <FaDownload /><span>Resume</span>
+                    <FaDownload/><span>Resume</span>
                 </a>
             </div>
         </div>

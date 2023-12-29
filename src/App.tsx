@@ -17,9 +17,9 @@ import ContactEn from './components/Contact/Contact.en';
 import ContactNo from './components/Contact/Contact.no';
 import './App.css';
 
-const App = () => {
+const App: React.FC = () => {
     const [activeSection, setActiveSection] = useState('');
-    const [language, setLanguage] = useState('no'); // 'en' for English, 'no' for Norwegian
+    const [language, setLanguage] = useState('no');
 
     useEffect(() => {
         const handleScroll = () => {
@@ -52,33 +52,43 @@ const App = () => {
         setLanguage(language === 'en' ? 'no' : 'en');
     };
 
+    const onLearnMoreClick = () => {
+        const aboutSection = document.getElementById('about');
+        if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <div className="App">
             {language === 'en' ? (
-                <>
-                    <NavbarEn activeSection={activeSection} toggleLanguage={toggleLanguage} />
-                    <section id="home" className="section-home"><HomeEn /></section>
-                    <section id="about" className="section-about"><AboutEn /></section>
-                    <section id="skills" className="section-skills"><SkillsEn /></section>
-                    <section id="experience" className="section-experience"><ExperienceEn /></section>
-                    <section id="education" className="section-education"><EducationEn /></section>
-                    <section id="projects" className="section-projects"><ProjectsEn /></section>
-                    <section id="contact" className="section-contact"><ContactEn /></section>
-                </>
+                <NavbarEn activeSection={activeSection} toggleLanguage={toggleLanguage} />
             ) : (
-                <>
-                    <NavbarNo activeSection={activeSection} toggleLanguage={toggleLanguage} />
-                    <section id="home" className="section-home"><HomeNo /></section>
-                    <section id="about" className="section-about"><AboutNo /></section>
-                    <section id="skills" className="section-skills"><SkillsNo /></section>
-                    <section id="experience" className="section-experience"><ExperienceNo /></section>
-                    <section id="education" className="section-education"><EducationNo /></section>
-                    <section id="projects" className="section-projects"><ProjectsNo /></section>
-                    <section id="contact" className="section-contact"><ContactNo /></section>
-                </>
+                <NavbarNo activeSection={activeSection} toggleLanguage={toggleLanguage} />
             )}
+            <section id="home" className="section-home">
+                {language === 'en' ? <HomeEn onLearnMoreClick={onLearnMoreClick} /> : <HomeNo onLearnMoreClick={onLearnMoreClick} />}
+            </section>
+            <section id="about" className="section-about">
+                {language === 'en' ? <AboutEn /> : <AboutNo />}
+            </section>
+            <section id="skills" className="section-skills">
+                {language === 'en' ? <SkillsEn /> : <SkillsNo />}
+            </section>
+            <section id="experience" className="section-experience">
+                {language === 'en' ? <ExperienceEn /> : <ExperienceNo />}
+            </section>
+            <section id="education" className="section-education">
+                {language === 'en' ? <EducationEn /> : <EducationNo />}
+            </section>
+            <section id="projects" className="section-projects">
+                {language === 'en' ? <ProjectsEn /> : <ProjectsNo />}
+            </section>
+            <section id="contact" className="section-contact">
+                {language === 'en' ? <ContactEn /> : <ContactNo />}
+            </section>
         </div>
     );
-}
+};
 
 export default App;
