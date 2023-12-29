@@ -1,8 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import { FaHome, FaUser, FaWrench, FaBriefcase, FaGraduationCap, FaProjectDiagram, FaEnvelope, FaDownload } from 'react-icons/fa';
-import { AiFillGithub, AiFillLinkedin, AiFillFacebook, AiFillInstagram } from 'react-icons/ai';
-import { SiDiscord } from 'react-icons/si';
+import { AiFillGithub, AiFillLinkedin, AiFillFacebook } from 'react-icons/ai';
 import profilePicture from '../../../assets/images/profilepicture.jpg';
 import norwegianFlag from '../../../assets/images/engelsk_flagg.png'; // Path to your English flag icon
 
