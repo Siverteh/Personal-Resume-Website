@@ -7,7 +7,7 @@ const AboutNo = () => {
         <div className="about-section">
             <h2 className="section-title">Om Meg</h2>
             <p className="above-image-text">
-                Jeg er en 23 år gammel informatikkstudent som studerer i Grimstad, Norge. Min utdanningsreise er for øyeblikket fokusert på å tjene en bachelorgrad i informatikk, med fremtidige planer om å spesialisere meg i kunstig intelligens gjennom et masterprogram.
+                Jeg er en 23 år gammel dataingeniørstudent som studerer på Universitetet i Agder i Grimstad, Norge. Min utdanningsreise er for øyeblikket fokusert på å tjene en bachelorgrad i dataingeniør, med fremtidige planer om å spesialisere meg i kunstig intelligens gjennom et masterprogram.
             </p>
             <div className="about-main">
                 <div className="about-image">
@@ -20,11 +20,11 @@ const AboutNo = () => {
                     </p>
                     <div className="details-grid">
                         <p><strong>Alder:</strong> 23</p>
-                        <p><strong>Studie:</strong> Bachelor i informatikk</p>
+                        <p><strong>Studie:</strong> Bachelor i Dataingeniør</p>
                         <p><strong>Ambisjon:</strong> Master i kunstig intelligens</p>
                         <p><strong>Ekspertise:</strong> Backend-utvikling</p>
                         <p><strong>Sted:</strong> Grimstad, Norge</p>
-                        <p><strong>Ferdigheter:</strong> Systemarkitektur, Algoritmer</p>
+                        <p><strong>Ferdigheter:</strong> Systemutvikling, Algoritmer</p>
                         <p><strong>Favorittspråk:</strong> C++, Python</p>
                         <p><strong>Status:</strong> Skal ha praksisplass hos NorKart</p>
                         <p><strong>Telefon:</strong> +47 468 552 44</p>

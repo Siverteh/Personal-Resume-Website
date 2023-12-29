@@ -41,7 +41,7 @@ const ProjectsNo: React.FC = () => {
         { id: 'project2', title: 'HALPV2 Mobilutgave', imageUrl: HALPV2 },
         { id: 'project3', title: 'Bruktbilforhandlers GUI-app', imageUrl: car_dealership },
         { id: 'project4', title: 'Personlig CV-nettside', imageUrl: personal_resume_website },
-        { id: 'project5', title: 'Monkey Sort Defense', imageUrl: monkey_sort_defense },
+        { id: 'project5', title: 'Monkey Sort Defense Spill', imageUrl: monkey_sort_defense },
         { id: 'project6', title: 'Mikrokontroller Vekkeklokke', imageUrl: microcontroller_alarm_clock },
         { id: 'project7', title: 'UiA Meldingstavle', imageUrl: uia_message_board },
         { id: 'project8', title: 'Norsk Tegnspråkdetektor', imageUrl: sign_language_detector },

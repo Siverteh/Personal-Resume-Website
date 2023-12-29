@@ -18,11 +18,11 @@ const EducationNo = () => {
                 <div className="timeline-item">
                     <div className="timeline-content">
                         <div className="timeline-circle"></div>
-                        <h3>Bachelor i datateknikk</h3>
+                        <h3>Bachelor i dataingeniør</h3>
                         <div className="timeline-year">08/2021 - 05/2024</div>
                         <div className="timeline-university">Universitetet i Agder, Institutt for teknologi, Grimstad Norge</div>
                         <p className="timeline-description">
-                            Gjennom min bachelorgrad i datateknikk ved Universitetet i Agder i Grimstad har jeg fokusert på informasjons- og kommunikasjonsteknologi (IKT), som dekker et bredt spekter av emner fra programvareutvikling og cybersikkerhet til datamodellering og nettverkssikkerhet. Denne allsidige læreplanen, beriket med praktiske prosjekter i samarbeid med industripartnere, forberedte meg på ulike utfordringer innen den digitale teknologisektoren. Ved å spesialisere meg i programvareutvikling i mitt siste år, forbedret jeg mine ferdigheter innen områder som maskinsyn og DevOps, som kulminerte i en omfattende bacheloroppgave som understreket min beredskap for en profesjonell karriere innen IT og digitale systemer.
+                            Gjennom min bachelorgrad i dataingeniør ved Universitetet i Agder i Grimstad har jeg fokusert på informasjons- og kommunikasjonsteknologi (IKT), som dekker et bredt spekter av emner fra programvareutvikling og cybersikkerhet til datamodellering og nettverkssikkerhet. Denne allsidige læreplanen, beriket med praktiske prosjekter i samarbeid med industripartnere, forberedte meg på ulike utfordringer innen den digitale teknologisektoren. Ved å spesialisere meg i programvareutvikling i mitt siste år, forbedret jeg mine ferdigheter innen områder som maskinsyn og DevOps, som kulminerte i en omfattende bacheloroppgave som understreket min beredskap for en profesjonell karriere innen IT og digitale systemer.
                         </p>
                     </div>
                 </div>

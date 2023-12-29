@@ -7,7 +7,7 @@ const AboutEn = () => {
         <div className="about-section">
             <h2 className="section-title">About Me</h2>
             <p className="above-image-text">
-                I am a 23-year-old Computer Science student studying in Grimstad, Norway. My education journey is currently focused on earning a Bachelor's degree in Computer Science, with future plans to specialize in Artificial Intelligence through a Master's program.
+                I am a 23-year-old Computer Science student studying at the University of Agder in Grimstad, Norway. My education journey is currently focused on earning a Bachelor's degree in Computer Science, with future plans to specialize in Artificial Intelligence through a Master's program.
             </p>
             <div className="about-main">
                 <div className="about-image">
@@ -24,7 +24,7 @@ const AboutEn = () => {
                         <p><strong>Aspiration:</strong> Master's in Artificial Intelligence</p>
                         <p><strong>Expertise:</strong> Backend Development</p>
                         <p><strong>Location:</strong> Grimstad, Norway</p>
-                        <p><strong>Skills:</strong> System Architecture, Algorithms</p>
+                        <p><strong>Skills:</strong> Software development, Algorithms</p>
                         <p><strong>Favorite languages:</strong> C++, Python</p>
                         <p><strong>Status:</strong> Going to have an Internship for NorKart</p>
                         <p><strong>Phone:</strong> +47 468 552 44</p>
