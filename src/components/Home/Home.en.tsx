@@ -1,6 +1,5 @@
 import React from 'react';
 import './Home.css';
-import { FaLinkedin } from 'react-icons/fa'; // You can import the LinkedIn icon if you want to use it in the CTA
 
 const HomeEn: React.FC = () => {
     return (

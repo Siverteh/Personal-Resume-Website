@@ -1,7 +1,5 @@
 import React from 'react';
 import './Home.css';
-// Importer LinkedIn-ikonet hvis du vil bruke det i CTA (Call to Action)
-import { FaLinkedin } from 'react-icons/fa';
 
 const HomeNo: React.FC = () => {
     return (
