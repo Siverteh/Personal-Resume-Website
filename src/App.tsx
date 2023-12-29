@@ -30,23 +30,22 @@ const App: React.FC = () => {
                 const element = document.getElementById(section);
                 if (element) {
                     const rect = element.getBoundingClientRect();
-                    if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+                    // Adjust the condition to determine the active section
+                    if (rect.top <= window.innerHeight / 3 && rect.bottom >= window.innerHeight / 3) {
                         currentSection = section;
                         break;
                     }
                 }
             }
 
-            setActiveSection(currentSection);
-
-            if (currentSection && window.location.hash !== `#${currentSection}`) {
-                window.history.pushState(null, '', `#${currentSection}`);
+            if (currentSection !== activeSection) {
+                setActiveSection(currentSection);
             }
         };
 
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    }, [activeSection]);
 
     const toggleLanguage = () => {
         setLanguage(language === 'en' ? 'no' : 'en');
