@@ -4,6 +4,7 @@ import { FaHome, FaUser, FaWrench, FaBriefcase, FaGraduationCap, FaProjectDiagra
 import { AiFillGithub, AiFillLinkedin, AiFillFacebook} from 'react-icons/ai';
 import profilePicture from '../../../assets/images/profilepicture.jpg';
 import norwegianFlag from '../../../assets/images/norsk_flagg.png'; // Path to your Norwegian flag icon
+import CV from '../../../assets/pdfs/CV.pdf';
 
 interface NavbarProps {
     activeSection: string;
@@ -44,7 +45,7 @@ const NavbarEn: React.FC<NavbarProps> = ({ activeSection, toggleLanguage }) => {
                 <a href="#contact" className={isActive('contact')} onClick={(e) => scrollToSection('contact', e)}><FaEnvelope/><span>Contact</span></a>
             </div>
             <div className="resume-container">
-                <a href="path-to-your-resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
+                <a href={CV} target="_blank" rel="noopener noreferrer" className="resume-button">
                     <FaDownload/><span>Resume</span>
                 </a>
             </div>
