@@ -10,7 +10,6 @@ import microcontroller_alarm_clock from '../../assets/images/microcontroller_ala
 import uia_message_board from '../../assets/images/uia_message_board_resize.jpg';
 import sign_language_detector from '../../assets/images/sign_language_detector_resize.jpg';
 import operating_system from '../../assets/images/operating_system_resize.jpg';
-import AlarmClockGif from '../../assets/gifs/alarm_clock_demo.gif';
 import Halpgif from '../../assets/gifs/halp demo.gif';
 import HALPpdf from '../../assets/pdfs/Ikt201g22h_prosjektRapport .pdf';
 import HALPV2gif from '../../assets/gifs/HALPV2 demo.gif';
@@ -103,7 +102,6 @@ const ProjectsEn: React.FC = () => {
             id: 'project6',
             title: 'Microcontroller Alarm Clock',
             imageUrl: microcontroller_alarm_clock,
-            gifUrl: AlarmClockGif,
             description: "The Microcontroller Alarm Clock, engineered primarily using C in Mbed Studio, epitomizes a blend of traditional timekeeping and modern functionality. Starting from the Unix epoch time at initialization, it features a customizable alarm with snooze capabilities, enabled or disabled easily across its user-friendly interface. Besides its core alarm function, the device stands out with its ability to display room temperature and humidity, offer a weather forecast specifically for Grimstad, and scroll the top three news feeds, updating every 30 minutes. Additionally, it sets its Real-Time Clock (RTC) using Unix time, accounting for time zones and daylight savings, ensuring accuracy in its time display. This multifunctional alarm clock, with its diverse features, serves not just as a timekeeping tool but as a comprehensive information hub, suitable for both home and office environments.",
             repoUrl: "https://github.com/Siverteh/Microcontroller-project"
         },

@@ -10,7 +10,6 @@ import microcontroller_alarm_clock from '../../assets/images/microcontroller_ala
 import uia_message_board from '../../assets/images/uia_message_board_resize.jpg';
 import sign_language_detector from '../../assets/images/sign_language_detector_resize.jpg';
 import operating_system from '../../assets/images/operating_system_resize.jpg';
-import AlarmClockGif from '../../assets/gifs/alarm_clock_demo.gif';
 import Halpgif from '../../assets/gifs/halp demo.gif';
 import HALPpdf from '../../assets/pdfs/Ikt201g22h_prosjektRapport .pdf';
 import HALPV2gif from '../../assets/gifs/HALPV2 demo.gif';
@@ -97,7 +96,6 @@ const ProjectsNo: React.FC = () => {
             id: 'project6',
             title: 'Mikrokontroller Vekkerklokke',
             imageUrl: microcontroller_alarm_clock,
-            gifUrl: AlarmClockGif,
             description: "Mikrokontroller Vekkerklokken, primært utviklet med C i Mbed Studio, representerer en kombinasjon av tradisjonell tidtaking og moderne funksjonalitet. Med en tilpassbar alarm, temperatur- og fuktighetsvisning, værmelding for Grimstad, og en rullende nyhetsstrøm, fungerer denne multifunksjonelle klokken som et omfattende informasjonssenter.",
             repoUrl: "https://github.com/Siverteh/Microcontroller-project"
         },
