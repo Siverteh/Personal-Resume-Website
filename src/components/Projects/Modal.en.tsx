@@ -1,7 +1,6 @@
 // ModalEn.tsx
 import React from 'react';
 import './Modal.css';
-import CV from "../../assets/pdfs/CV.pdf";
 import {FaDownload} from "react-icons/fa";
 
 // ProjectData type definition (can be in a types.ts file or at the top of your component file)
