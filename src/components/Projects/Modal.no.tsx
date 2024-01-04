@@ -1,9 +1,8 @@
-// ModalEn.tsx
 import React from 'react';
 import './Modal.css';
 import {FaDownload} from "react-icons/fa";
 
-// ProjectData type definition (can be in a types.ts file or at the top of your component file)
+//Custom data type to hold the information of each project.
 export interface ProjectData {
     id: string;
     title: string;

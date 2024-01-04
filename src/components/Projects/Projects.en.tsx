@@ -35,8 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, imageUrl, onClick }) =
     </div>
 );
 
-// Define a type for individual project data
-// ProjectData type definition (can be in a types.ts file or at the top of your component file)
+//Datatype definition to hold project inforation.
 export interface ProjectData {
     id: string;
     title: string;
@@ -47,13 +46,13 @@ export interface ProjectData {
     repoUrl?: string;
 }
 
+//Component that renders the projects section of the website.
 const ProjectsEn: React.FC = () => {
 
     const [selectedProject, setSelectedProject] = useState<ProjectData | null>(null);
 
-    // Example project data array
+    //Array that holds all the projects in the form of the defined ProjectData datatype.
     const projects: ProjectData[] = [
-        // Add your projects here
         {
             id: 'project1',
             title: 'HALP Web Edition',
@@ -95,6 +94,7 @@ const ProjectsEn: React.FC = () => {
             id: 'project5',
             title: 'Monkey Sort Defense Game',
             imageUrl: monkey_sort_defense,
+            description: "Video game developed in Python using the Pygame library for the BETA game jam 2023. With this game I won the game jam competition with 13 participants. In the game you play as Bananaman and defend a banana in the middle of the arena from waves of monkeys trying to steal it. The theme of the game jam was \"MAXIMUM UNLUCKY\" so I made it so the amount of monkeys spawned each round is determined using the monkey sort / bogo sort sorting algorithm on the round number.",
             repoUrl: "https://github.com/Siverteh/Monkey-sort-defense"
         },
 
@@ -134,11 +134,13 @@ const ProjectsEn: React.FC = () => {
         },
     ];
 
+    //Function to handle clicking project cards.
     const handleCardClick = (projectId: string) => {
         const project = projects.find(p => p.id === projectId);
         setSelectedProject(project || null);
     };
 
+    //Function to handle closing modals.
     const handleCloseModal = () => {
         setSelectedProject(null);
     };

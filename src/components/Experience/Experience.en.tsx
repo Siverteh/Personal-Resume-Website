@@ -1,6 +1,7 @@
 import React from 'react';
 import './Experience.css';
 
+//Component to render the experience section of the website.
 const ExperienceEn = () => {
     return (
         <div className="experience-section">

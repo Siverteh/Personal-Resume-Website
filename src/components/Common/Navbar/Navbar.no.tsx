@@ -11,14 +11,17 @@ interface NavbarProps {
     toggleLanguage: () => void;
 }
 
+//Component to render the navigation bar for the website.
 const NavbarNo: React.FC<NavbarProps> = ({ activeSection, toggleLanguage }) => {
 
+    //Function to have smooth scrolling for the navigation bar.
     const scrollToSection = (sectionId: string, event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
         event.preventDefault(); // Prevent default anchor link behavior
         const section = document.getElementById(sectionId);
         section?.scrollIntoView({ behavior: 'smooth' });
     };
 
+    //Function to get the active section of the website.
     const isActive = (section: string) => activeSection === section ? 'active' : '';
 
     return (

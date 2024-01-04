@@ -18,19 +18,24 @@ import ContactNo from './components/Contact/Contact.no';
 import './App.css';
 
 const App: React.FC = () => {
+    // State for the currently active section
     const [activeSection, setActiveSection] = useState('');
+    // State for the current language ('no' for Norwegian by default)
     const [language, setLanguage] = useState('no');
 
+    // useEffect hook for handling scrolling and updating the active section
     useEffect(() => {
         const handleScroll = () => {
+            // Defining the sections of the page
             const sections = ['home', 'about', 'skills', 'experience', 'education', 'projects', 'contact'];
             let currentSection = '';
 
+            // Iterating over each section to determine which one is currently active
             for (const section of sections) {
                 const element = document.getElementById(section);
                 if (element) {
                     const rect = element.getBoundingClientRect();
-                    // Adjust the condition to determine the active section
+                    // Checking if the section is in the current viewport
                     if (rect.top <= window.innerHeight / 3 && rect.bottom >= window.innerHeight / 3) {
                         currentSection = section;
                         break;
@@ -38,19 +43,23 @@ const App: React.FC = () => {
                 }
             }
 
+            // Updating the active section state
             if (currentSection !== activeSection) {
                 setActiveSection(currentSection);
             }
         };
-
+        // Adding an event listener for scrolling
         window.addEventListener('scroll', handleScroll);
+        // Removing the event listener on component unmount
         return () => window.removeEventListener('scroll', handleScroll);
     }, [activeSection]);
 
+    // Function to toggle the language between English and Norwegian
     const toggleLanguage = () => {
         setLanguage(language === 'en' ? 'no' : 'en');
     };
 
+    // Function for smooth scrolling to the 'about' section
     const onLearnMoreClick = () => {
         const aboutSection = document.getElementById('about');
         if (aboutSection) {
@@ -58,6 +67,7 @@ const App: React.FC = () => {
         }
     };
 
+    // Rendering the HTML of the application, making sure all the components are on the same page.
     return (
         <div className="App">
             {language === 'en' ? (

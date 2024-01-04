@@ -11,14 +11,17 @@ interface NavbarProps {
     toggleLanguage: () => void;
 }
 
+//Component to render the navigation bar of the website.
 const NavbarEn: React.FC<NavbarProps> = ({ activeSection, toggleLanguage }) => {
 
+    //Function to have smooth scrolling when clicking on the navigation bar.
     const scrollToSection = (sectionId: string, event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
         event.preventDefault(); // Prevent default anchor link behavior
         const section = document.getElementById(sectionId);
         section?.scrollIntoView({ behavior: 'smooth' });
     };
 
+    //Function to get the active section of the website.
     const isActive = (section: string) => activeSection === section ? 'active' : '';
 
     return (
@@ -36,7 +39,7 @@ const NavbarEn: React.FC<NavbarProps> = ({ activeSection, toggleLanguage }) => {
                 <a href="https://www.facebook.com/profile.php?id=100000290574761" target="_blank" rel="noopener noreferrer"><AiFillFacebook /></a>
             </div>
             <div className="nav-links">
-                <a href="#home" className={isActive('home')} onClick={(e) => scrollToSection('home', e)}><FaHome/><span>Home</span></a>
+                <a href="home" className={isActive('home')} onClick={(e) => scrollToSection('home', e)}><FaHome/><span>Home</span></a>
                 <a href="#about" className={isActive('about')} onClick={(e) => scrollToSection('about', e)}><FaUser/><span>About</span></a>
                 <a href="#skills" className={isActive('skills')} onClick={(e) => scrollToSection('skills', e)}><FaWrench/><span>Skills</span></a>
                 <a href="#experience" className={isActive('experience')} onClick={(e) => scrollToSection('experience', e)}><FaBriefcase/><span>Experience</span></a>

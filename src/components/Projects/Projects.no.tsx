@@ -35,8 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, imageUrl, onClick }) =
     </div>
 );
 
-// Define a type for individual project data
-// ProjectData type definition (can be in a types.ts file or at the top of your component file)
+//Custom datatype to hold the information of a project.
 export interface ProjectData {
     id: string;
     title: string;
@@ -47,11 +46,12 @@ export interface ProjectData {
     repoUrl?: string;
 }
 
+//Component to render the projects part of the website.
 const ProjectsNo: React.FC = () => {
 
     const [selectedProject, setSelectedProject] = useState<ProjectData | null>(null);
 
-    // Example project data array
+    //Array containing my projects information in the form of the defined data type ProjectData.
     const projects: ProjectData[] = [
         {
             id: 'project1',
@@ -90,6 +90,7 @@ const ProjectsNo: React.FC = () => {
             id: 'project5',
             title: 'Monkey Sort Defense Spill',
             imageUrl: monkey_sort_defense,
+            description: "Videospill utviklet i Python ved bruk av Pygame biblioteket for BETA game jam 2023. Med dette spillet vant jeg game jam konkurransen med 13 deltakere. I spillet spiller du som Bananamann og forsvarer en banan i midten av arenaen fra bølger av aper som prøver å stjele den. Temaet for game jam var \"MAXIMUM UNLUCKY\", så jeg gjordet det slik at antall aper som dukker opp hver runde bestemmes ved å bruke monkey sort / bogo sort sorteringsalgoritmen på rundenummeret.",
             repoUrl: "https://github.com/Siverteh/Monkey-sort-defense"
         },
         {
@@ -125,11 +126,13 @@ const ProjectsNo: React.FC = () => {
         }
     ];
 
+    //Function to handle clicking project cards.
     const handleCardClick = (projectId: string) => {
         const project = projects.find(p => p.id === projectId);
         setSelectedProject(project || null);
     };
 
+    //Function to handle closing a modal.
     const handleCloseModal = () => {
         setSelectedProject(null);
     };

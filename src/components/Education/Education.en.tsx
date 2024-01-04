@@ -1,6 +1,7 @@
 import React from 'react';
 import './Education.css';
 
+//Component to render the education section of the website.
 const EducationEn = () => {
     return (
         <div className="education-section">

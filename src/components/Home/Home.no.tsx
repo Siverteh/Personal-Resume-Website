@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 
+//Home component for the landing page of the website
 const HomeNo: React.FC<{ onLearnMoreClick: () => void }> = ({ onLearnMoreClick }) => {
     return (
         <div className="home-container">
