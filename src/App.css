@@ -2,15 +2,8 @@
   /* Removed text-align to prevent conflict with child components */
 }
 
-/* Reset default styles for each section to prevent unexpected padding/margins */
 .section-home,
-.section-about {
-  margin: 0; /* Reset any default margins */
-  padding: 0; /* Reset any default padding */
-  min-height: 100vh; /* Adjust the height as needed */
-  box-sizing: border-box; /* Include padding in the box model calculation */
-}
-
+.section-about,
 .section-education,
 .section-experience,
 .section-contact,
