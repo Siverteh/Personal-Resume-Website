@@ -17,7 +17,7 @@ const ContactNo = () => {
 
         if (!formRef.current) return;
 
-        emailjs.sendForm('your_service_id', 'your_template_id', formRef.current, 'your_user_id')
+        emailjs.sendForm('service_w5bf53q', 'template_3gdkn9v', formRef.current, '8HYWrA78-vJPhbf3W')
             .then((result) => {
                 console.log(result.text);
                 alert("Meldingen ble sendt!");

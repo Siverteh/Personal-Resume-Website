@@ -94,7 +94,7 @@ const ProjectsEn: React.FC = () => {
             id: 'project5',
             title: 'Monkey Sort Defense Game',
             imageUrl: monkey_sort_defense,
-            description: "Video game developed in Python using the Pygame library for the BETA game jam 2023. With this game I won the game jam competition with 13 participants. In the game you play as Bananaman and defend a banana in the middle of the arena from waves of monkeys trying to steal it. The theme of the game jam was \"MAXIMUM UNLUCKY\" so I made it so the amount of monkeys spawned each round is determined using the monkey sort / bogo sort sorting algorithm on the round number.",
+            description: "Video game developed in Python using the Pygame library for the BETA Game-Jam 2023. With this game I won the game jam competition with 13 participants. In the game you play as Bananaman and defend a banana in the middle of the arena from waves of monkeys trying to steal it. The theme of the game jam was \"MAXIMUM UNLUCKY\" so I made it so the amount of monkeys spawned each round is determined using the monkey sort / bogo sort sorting algorithm on the round number.",
             repoUrl: "https://github.com/Siverteh/Monkey-sort-defense"
         },
 
