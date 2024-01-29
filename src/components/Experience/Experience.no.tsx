@@ -15,7 +15,7 @@ const ExperienceNo = () => {
                         <div className="timeline-company">NorKart</div>
                         <p className="timeline-description">
                             Jeg skal jobbe som sommerintern hos NorKart, hvor jeg vil delta i praktiske prosjekter og få
-                            hands-on erfaring i feltet.
+                            erfaring i feltet.
                         </p>
                     </div>
                 </div>
