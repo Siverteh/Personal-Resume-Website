@@ -85,7 +85,10 @@
         padding-top: 20px; /* Adjust if needed to align content vertically */
         padding-right: 10px; /* Ensure right padding is sufficient */
         padding-bottom: 20px; /* Adjust if needed */
-        letter-spacing: 0px;
+    }
+
+    ul, ul li {
+        letter-spacing: normal; /* Resets to the default spacing */
     }
 
     .timeline-content {
