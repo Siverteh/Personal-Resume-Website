@@ -163,7 +163,7 @@
 
     /* Adjusting the language toggle button to add spacing above */
     .language-toggle {
-        margin-bottom: 10px; /* Add space below the language toggle button */
+        margin-bottom: 30px; /* Add space below the language toggle button */
     }
 
     /* Adjust social icons container to ensure spacing around it */
