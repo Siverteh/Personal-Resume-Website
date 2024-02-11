@@ -165,7 +165,7 @@
     .language-toggle {
         position: absolute;
         top: 10px;
-        left: 0px;
+        left: 5px;
         background: none;
         border: none;
         cursor: pointer;
