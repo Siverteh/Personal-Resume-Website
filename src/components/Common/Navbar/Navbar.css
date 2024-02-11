@@ -159,12 +159,16 @@
         border: 2px solid #2C2F3F;
         display: block;
         margin-bottom: 10px; /* Add space below the profile picture */
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
-    /* Adjusting the language toggle button to add spacing above */
     .language-toggle {
-        margin-bottom: 300px; /* Add space below the language toggle button */
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        background: none;
+        border: none;
+        cursor: pointer;
     }
 
     /* Adjust social icons container to ensure spacing around it */
