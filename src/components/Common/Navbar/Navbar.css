@@ -149,41 +149,57 @@
 
 @media (max-width: 768px) {
     .navbar {
-        width: 60px; /* Adjust the navbar width as needed */
-        /* Ensure other navbar styles are optimized for mobile */
+        width: 60px; /* Adjusted navbar width for mobile */
     }
 
     .profile-pic {
-        width: 48px; /* Adjust the size to fit within the mobile navbar */
-        height: 48px; /* Make it square */
-        border-radius: 0%; /* Remove the roundness to make it square */
-        border: 2px solid #2C2F3F; /* Adjust the border as needed */
-        display: block; /* Ensure it's displayed if previously hidden */
+        width: 48px; /* Smaller, square profile picture */
+        height: 48px;
+        border-radius: 0%; /* Make it square */
+        border: 2px solid #2C2F3F;
+        display: block;
+        margin-bottom: 10px; /* Add space below the profile picture */
     }
 
-    /* Update styles for other elements to ensure a cohesive mobile experience */
-    .social-icons a,
+    /* Adjusting the language toggle button to add spacing above */
+    .language-toggle {
+        margin-bottom: 10px; /* Add space below the language toggle button */
+    }
+
+    /* Adjust social icons container to ensure spacing around it */
+    .social-icons {
+        flex-direction: column;
+        margin-top: 10px; /* Add space above the social icons */
+    }
+
+    /* Ensure individual social icons have spacing if needed */
+    .social-icons a {
+        margin-bottom: 5px; /* Adds spacing between the icons */
+    }
+
+    .social-icons a:last-child {
+        margin-bottom: 0; /* Removes bottom margin from the last icon to avoid extra space */
+    }
+
+    /* Continue with other adjustments for mobile layout */
     .nav-links a,
     .resume-button {
-        font-size: 16px; /* Adjust font sizes as appropriate */
+        font-size: 16px;
     }
 
     .profile-name,
     .nav-links a span,
     .resume-button span {
-        display: none; /* Hide text elements that don't fit well in the reduced space */
+        display: none;
     }
 
     .nav-links {
-        margin-top: 20px; /* Adjust the top margin of nav links */
+        margin-top: 20px;
     }
 
     .resume-button {
-        width: 100%; /* Make the resume button full width */
-        padding: 0.8em; /* Adjust padding for better touch target size */
-    }
-
-    .social-icons {
-        flex-direction: column; /* Stack social icons vertically */
+        width: 100%;
+        padding: 0.8em;
     }
 }
+
