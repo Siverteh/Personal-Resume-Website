@@ -81,7 +81,7 @@
 
 @media (max-width: 768px) {
     .education-section {
-        padding-left: 60px; /* Adjusted to make room for the navbar */
+        padding-left: 70px; /* Adjusted to make room for the navbar */
         padding-top: 20px; /* Adjust if needed to align content vertically */
         padding-right: 10px; /* Ensure right padding is sufficient */
         padding-bottom: 20px; /* Adjust if needed */
