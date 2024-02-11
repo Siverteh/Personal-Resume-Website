@@ -1,10 +1,11 @@
 import React from 'react';
 import './Navbar.css';
-import { FaHome, FaUser, FaWrench, FaBriefcase, FaGraduationCap, FaProjectDiagram, FaEnvelope, FaDownload } from 'react-icons/fa';
+import { FaHome, FaUser, FaWrench, FaBriefcase, FaGraduationCap, FaProjectDiagram, FaEnvelope, FaDownload, FaStar } from 'react-icons/fa';
 import { AiFillGithub, AiFillLinkedin, AiFillFacebook } from 'react-icons/ai';
 import profilePicture from '../../../assets/images/profilepicture.jpg';
 import norwegianFlag from '../../../assets/images/engelsk_flagg.png'; // Path to your English flag icon
 import CV from '../../../assets/pdfs/CV.pdf';
+import grades from '../../../assets/pdfs/karakterutskrift.pdf'
 
 interface NavbarProps {
     activeSection: string;
@@ -48,6 +49,10 @@ const NavbarNo: React.FC<NavbarProps> = ({ activeSection, toggleLanguage }) => {
                 <a href="#contact" className={isActive('contact')} onClick={(e) => scrollToSection('contact', e)}><FaEnvelope/><span>Kontakt</span></a>
             </div>
             <div className="resume-container">
+                <a href={grades} target="_blank" rel="noopener noreferrer" className="resume-button"
+                   style={{marginBottom: '10px'}}>
+                    <FaStar/><span>Karakterutskrift</span>
+                </a>
                 <a href={CV} target="_blank" rel="noopener noreferrer" className="resume-button">
                     <FaDownload/><span>CV</span>
                 </a>
