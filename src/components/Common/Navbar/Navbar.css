@@ -159,6 +159,7 @@
         border: 2px solid #2C2F3F;
         display: block;
         margin-bottom: 10px; /* Add space below the profile picture */
+        margin-top: 10px;
     }
 
     /* Adjusting the language toggle button to add spacing above */
