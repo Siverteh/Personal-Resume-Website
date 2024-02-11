@@ -148,6 +148,11 @@
 }
 
 @media (max-width: 768px) {
+
+    .profile-pic {
+        display: none; /* This line hides the profile picture on mobile devices */
+    }
+
     .navbar {
         width: 60px;
     }
