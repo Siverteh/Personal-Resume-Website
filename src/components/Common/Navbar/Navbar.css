@@ -148,38 +148,42 @@
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        width: 60px; /* Adjust the navbar width as needed */
+        /* Ensure other navbar styles are optimized for mobile */
+    }
 
     .profile-pic {
-        display: none; /* This line hides the profile picture on mobile devices */
+        width: 48px; /* Adjust the size to fit within the mobile navbar */
+        height: 48px; /* Make it square */
+        border-radius: 0%; /* Remove the roundness to make it square */
+        border: 2px solid #2C2F3F; /* Adjust the border as needed */
+        display: block; /* Ensure it's displayed if previously hidden */
     }
 
-    .navbar {
-        width: 60px;
-    }
-
-    .profile-pic,
+    /* Update styles for other elements to ensure a cohesive mobile experience */
     .social-icons a,
     .nav-links a,
     .resume-button {
-        font-size: 16px;
+        font-size: 16px; /* Adjust font sizes as appropriate */
     }
 
     .profile-name,
     .nav-links a span,
     .resume-button span {
-        display: none;
+        display: none; /* Hide text elements that don't fit well in the reduced space */
     }
 
     .nav-links {
-        margin-top: 20px;
+        margin-top: 20px; /* Adjust the top margin of nav links */
     }
 
     .resume-button {
-        width: 100%;
-        padding: 0.8em;
+        width: 100%; /* Make the resume button full width */
+        padding: 0.8em; /* Adjust padding for better touch target size */
     }
 
     .social-icons {
-        flex-direction: column;
+        flex-direction: column; /* Stack social icons vertically */
     }
 }
