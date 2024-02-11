@@ -82,7 +82,10 @@
 
 @media (max-width: 768px) {
     .experience-section {
-        padding: 50px 5%;
+        padding-left: 60px; /* Adjusted to make room for the navbar */
+        padding-top: 20px; /* Adjust if needed to align content vertically */
+        padding-right: 10px; /* Ensure right padding is sufficient */
+        padding-bottom: 20px; /* Adjust if needed */
     }
 
     .timeline-content {

@@ -61,6 +61,14 @@
 }
 
 @media (max-width: 768px) {
+
+    .skills-container{
+        padding-left: 60px; /* Adjusted to make room for the navbar */
+        padding-top: 20px; /* Adjust if needed to align content vertically */
+        padding-right: 10px; /* Ensure right padding is sufficient */
+        padding-bottom: 20px; /* Adjust if needed */
+    }
+
     .skills-grid {
         grid-template-columns: 1fr;
     }
