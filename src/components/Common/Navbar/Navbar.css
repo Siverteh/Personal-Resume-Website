@@ -204,8 +204,18 @@
     }
 
     .resume-button {
-        width: 100%;
-        padding: 0.8em;
+        width: calc(100% - 4px); /* Adjust width to fit within the navbar, accounting for border */
+        padding: 8px 0; /* Adjust padding to reduce overall size */
+        font-size: 0.7em; /* Optional: Adjust font size to ensure text fits */
+        justify-content: center;
+        margin-bottom: 5px; /* Adjust spacing between buttons */
+    }
+
+    /* Adjustments for button container */
+    .resume-container {
+        width: 100%; /* Ensure the container matches the navbar width */
+        padding: 0; /* Remove padding to maximize available space */
+        margin-top: 10px; /* Adjust as needed for spacing within the navbar */
     }
 }
 
