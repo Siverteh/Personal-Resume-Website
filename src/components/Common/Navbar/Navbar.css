@@ -156,7 +156,7 @@
     .profile-pic {
         width: 48px; /* Smaller, square profile picture */
         height: 48px;
-        border-radius: 0%; /* Make it square */
+        border-radius: 50%; /* Make it square */
         border: 2px solid #2C2F3F;
         display: block;
         margin-bottom: 10px; /* Add space below the profile picture */
