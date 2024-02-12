@@ -215,7 +215,7 @@
     .resume-container {
         width: 100%; /* Ensure the container matches the navbar width */
         padding: 0; /* Remove padding to maximize available space */
-        margin-top: 10px; /* Adjust as needed for spacing within the navbar */
+        margin-top: auto; /* Adjust as needed for spacing within the navbar */
     }
 }
 
