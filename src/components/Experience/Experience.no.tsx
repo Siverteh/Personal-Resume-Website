@@ -12,11 +12,13 @@ const ExperienceNo = () => {
                         <div className="timeline-circle"></div>
                         <h3>Sommerintern</h3>
                         <div className="timeline-year">06/2024 - 08/2024</div>
-                        <div className="timeline-company">NorKart</div>
-                        <p className="timeline-description">
-                            Jeg skal jobbe som sommerintern hos NorKart, hvor jeg vil delta i praktiske prosjekter og få
-                            erfaring i feltet.
-                        </p>
+                        <div className="timeline-company">NorKart AS, Kristiansand, Norge</div>
+                        <ul className="timeline-description">
+                            <li>Utviklet Beam, en Python-pakke for chunking-metoder, PDF-til-tekst-konvertering og embedding-modeller for informasjonsinnhenting.</li>
+                            <li>Implementerte et evalueringsmodul for chunking-metoder og embedding-modeller, med støtte for NDCG, MAP, F1 og nøyaktighetsmålinger.</li>
+                            <li>Forsket på og utviklet en semantisk chunking-metode som reduserte tokenbruk med 70 % i RAG-arkitekturer, samtidig som ytelsen ble opprettholdt.</li>
+                            <li>Implementerte en RAG-arkitektur for plandeterminering ved bruk av BEAM via Microsoft Azure.</li>
+                        </ul>
                     </div>
                 </div>
                 <div className="timeline-item">

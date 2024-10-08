@@ -8,7 +8,7 @@ const AboutEn = () => {
         <div className="about-section">
             <h2 className="section-title">About Me</h2>
             <p className="above-image-text">
-                I am a 23-year-old Computer Science student studying at the University of Agder in Grimstad, Norway. My education journey is currently focused on earning a Bachelor's degree in Computer Science, with future plans to specialize in Artificial Intelligence through a Master's program.
+                I am a 24-year-old Artificial Intelligens student studying at the University of Agder in Grimstad, Norway. My education journey is currently focused on earning a master's degree in Artificial Intelligens after finishing my bachelor's degree in Computer Engineering this spring.
             </p>
             <div className="about-main">
                 <div className="about-image">
@@ -20,14 +20,14 @@ const AboutEn = () => {
                         I consider myself primarily a backend developer. I enjoy the challenge of creating complex systems and logic that power the applications we use every day. My goal is to develop scalable and efficient software that makes a difference.
                     </p>
                     <div className="details-grid">
-                        <p><strong>Age:</strong> 23</p>
-                        <p><strong>Study:</strong> Bachelor's in Computer Science</p>
-                        <p><strong>Aspiration:</strong> Master's in Artificial Intelligence</p>
+                        <p><strong>Age:</strong> 24</p>
+                        <p><strong>Study:</strong> Master's in Artificial Intelligence</p>
+                        <p><strong>Aspiration:</strong> To contribute to the development of innovative solutions in artificial intelligence.</p>
                         <p><strong>Expertise:</strong> Backend Development</p>
                         <p><strong>Location:</strong> Grimstad, Norway</p>
                         <p><strong>Skills:</strong> Software development, Algorithms</p>
                         <p><strong>Favorite languages:</strong> C++, Python</p>
-                        <p><strong>Status:</strong> Going to have an Internship for NorKart</p>
+                        <p><strong>Status:</strong> Looking for summer jobs</p>
                         <p><strong>Phone:</strong> +47 468 552 44</p>
                         <p><strong>Email:</strong> sivertespelandhusebo@gmail.com</p>
                     </div>

@@ -12,12 +12,15 @@ const ExperienceEn = () => {
                         <div className="timeline-circle"></div>
                         <h3>Summer Intern</h3>
                         <div className="timeline-year">06/2024 - 08/2024</div>
-                        <div className="timeline-company">NorKart</div>
-                        <p className="timeline-description">
-                            I will be working as a summer intern at NorKart, engaging in practical projects and gaining
-                            hands-on experience in the field.
-                        </p>
+                        <div className="timeline-company">NorKart AS, Kristiansand, Norway</div>
+                        <ul className="timeline-description">
+                            <li>Developed Beam, a Python package for chunking methods, PDF-to-text conversion, and embedding models for information retrieval.</li>
+                            <li>Implemented an evaluation module for chunking methods and embedding models, supporting NDCG, MAP, F1, and accuracy metrics.</li>
+                            <li>Researched and developed a semantic chunking method, reducing token usage by 70% in Retrieval-Augmented Generation (RAG) architectures, while maintaining performance.</li>
+                            <li>Implemented a RAG architecture for plan determinations using BEAM via Microsoft Azure.</li>
+                        </ul>
                     </div>
+                </div>
                 </div>
                 <div className="timeline-item">
                     <div className="timeline-content">

@@ -8,7 +8,7 @@ const AboutNo = () => {
         <div className="about-section">
             <h2 className="section-title">Om Meg</h2>
             <p className="above-image-text">
-                Jeg er en 23 år gammel dataingeniørstudent som studerer på Universitetet i Agder i Grimstad, Norge. Min utdanningsreise er for øyeblikket fokusert på å tjene en bachelorgrad i dataingeniør, med fremtidige planer om å spesialisere meg i kunstig intelligens gjennom et masterprogram.
+                Jeg er en 24 år gammel kunstig intelligens student som studerer på Universitetet i Agder i Grimstad, Norge. Min utdanningsreise er for øyeblikket fokusert på å tjene en mastergrad i kunstig intelligens.
             </p>
             <div className="about-main">
                 <div className="about-image">
@@ -20,14 +20,14 @@ const AboutNo = () => {
                         Jeg anser meg selv primært som en backend-utvikler. Jeg liker utfordringen med å skape komplekse systemer og logikk som driver applikasjonene vi bruker hver dag. Målet mitt er å utvikle skalerbar og effektiv programvare som gjør en forskjell.
                     </p>
                     <div className="details-grid">
-                        <p><strong>Alder:</strong> 23</p>
-                        <p><strong>Studie:</strong> Bachelor i Dataingeniør</p>
-                        <p><strong>Ambisjon:</strong> Master i kunstig intelligens</p>
+                        <p><strong>Alder:</strong> 24</p>
+                        <p><strong>Studie:</strong> Master i kunstig intelligens</p>
+                        <p><strong>Ambisjon:</strong> Å bidra til utviklingen av innovative løsninger innen kunstig intelligens.</p>
                         <p><strong>Ekspertise:</strong> Backend-utvikling</p>
                         <p><strong>Sted:</strong> Grimstad, Norge</p>
-                        <p><strong>Ferdigheter:</strong> Systemutvikling, Algoritmer</p>
-                        <p><strong>Favorittspråk:</strong> C++, Python</p>
-                        <p><strong>Status:</strong> Skal ha praksisplass hos NorKart</p>
+                        <p><strong>Ferdigheter:</strong> Kunstig intelligens, Systemutvikling, Algoritmer</p>
+                        <p><strong>Favorittspråk:</strong>Python, C#</p>
+                        <p><strong>Status:</strong> Søker etter sommerjobb</p>
                         <p><strong>Telefon:</strong> +47 468 552 44</p>
                         <p><strong>E-post:</strong> sivertespelandhusebo@gmail.com</p>
                     </div>
