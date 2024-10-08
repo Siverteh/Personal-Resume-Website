@@ -86,7 +86,6 @@ const ExperienceEn = () => {
                     </div>
                 </div>
             </div>
-        </div>
     );
 };
 
