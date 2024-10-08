@@ -26,7 +26,7 @@ const AboutNo = () => {
                         <p><strong>Ekspertise:</strong> Backend-utvikling</p>
                         <p><strong>Sted:</strong> Grimstad, Norge</p>
                         <p><strong>Ferdigheter:</strong> Kunstig intelligens, Systemutvikling, Algoritmer</p>
-                        <p><strong>Favorittspråk:</strong>Python, C#</p>
+                        <p><strong>Favorittspråk:</strong> Python, C#</p>
                         <p><strong>Status:</strong> Søker etter sommerjobb</p>
                         <p><strong>Telefon:</strong> +47 468 552 44</p>
                         <p><strong>E-post:</strong> sivertespelandhusebo@gmail.com</p>

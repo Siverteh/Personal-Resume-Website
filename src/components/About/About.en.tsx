@@ -26,7 +26,7 @@ const AboutEn = () => {
                         <p><strong>Expertise:</strong> Backend Development</p>
                         <p><strong>Location:</strong> Grimstad, Norway</p>
                         <p><strong>Skills:</strong> Software development, Algorithms</p>
-                        <p><strong>Favorite languages:</strong> C++, Python</p>
+                        <p><strong>Favorite languages:</strong> Python, C#</p>
                         <p><strong>Status:</strong> Looking for summer jobs</p>
                         <p><strong>Phone:</strong> +47 468 552 44</p>
                         <p><strong>Email:</strong> sivertespelandhusebo@gmail.com</p>
