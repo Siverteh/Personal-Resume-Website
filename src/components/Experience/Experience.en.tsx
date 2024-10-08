@@ -21,6 +21,18 @@ const ExperienceEn = () => {
                         </ul>
                     </div>
                 </div>
+                <div className="timeline-item">
+                    <div className="timeline-content">
+                        <div className="timeline-circle"></div>
+                        <h3>Leader of KodeRIC</h3>
+                        <div className="timeline-year">03/2024 - Present</div>
+                        <div className="timeline-company">University of Agder, Grimstad, Norway</div>
+                        <ul className="timeline-description">
+                            <li>Held regular mentoring sessions for students, providing individual guidance and helping them understand advanced concepts in programming, debugging, and project development.</li>
+                            <li>Participated in scheduling coordination with teachers to accommodate students' needs, particularly during exam periods.</li>
+                            <li>Guided students in group projects by providing advice on project structuring, code design, and collaboration strategies.</li>
+                        </ul>
+                    </div>
                 </div>
                 <div className="timeline-item">
                     <div className="timeline-content">
@@ -86,6 +98,7 @@ const ExperienceEn = () => {
                     </div>
                 </div>
             </div>
+        </div>
     );
 };
 

@@ -24,6 +24,19 @@ const ExperienceNo = () => {
                 <div className="timeline-item">
                     <div className="timeline-content">
                         <div className="timeline-circle"></div>
+                        <h3>Leader of KodeRIC</h3>
+                        <div className="timeline-year">03/2024 - Nåværende</div>
+                        <div className="timeline-company">Universitetet i Agder, Grimstad, Norge</div>
+                        <ul className="timeline-description">
+                            <li>Holder jevnlige veiledningsøkter for studenter, gir individuell veiledning og hjelper dem med å forstå avanserte konsepter innen programmering, debugging og prosjektutvikling.</li>
+                            <li>Deltar i koordinering av timeplaner med lærere for å imøtekomme studentenes behov, spesielt i eksamensperioder.</li>
+                            <li>Veileder studenter i gruppeprosjekter ved å gi råd om prosjektstrukturering, kodeutforming og samarbeidsstrategier.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="timeline-item">
+                    <div className="timeline-content">
+                        <div className="timeline-circle"></div>
                         <h3>Studentassistent</h3>
                         <div className="timeline-year">01/2024 - Nåværende</div>
                         <div className="timeline-company">Universitetet i Agder</div>

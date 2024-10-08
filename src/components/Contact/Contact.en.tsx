@@ -8,7 +8,7 @@ const ContactEn = () => {
 
     //Variable that holds my google maps location.
     const mapEmbedHtml = {
-        __html: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2094.024181217998!2d8.590663177219982!3d58.342393389625535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4647ee638f1d47c1%3A0x323c2de197273549!2sTorvet%203%2C%204876%20Grimstad!5e0!3m2!1sno!2sno!4v1703773670766!5m2!1sno!2sno" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+        __html: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.662942043534!2d8.583603795159387!3d58.34347802289799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4647ee64552885f3%3A0xefb294847b60be2e!2sStorgaten%2050%2C%204876%20Grimstad!5e1!3m2!1sen!2sno!4v1728379131828!5m2!1sen!2sno" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
     };
 
     const formRef = useRef<HTMLFormElement>(null);
@@ -41,7 +41,7 @@ const ContactEn = () => {
                         <FaMapMarkerAlt className="contact-icon" />
                         <div>
                             <strong>Location:</strong>
-                            <p>Torvet 3, 4876 Grimstad</p>
+                            <p>Storgaten 50B, 4876 Grimstad</p>
                         </div>
                     </div>
                     <div className="contact-info-item">
