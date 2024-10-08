@@ -24,7 +24,7 @@ const ExperienceNo = () => {
                 <div className="timeline-item">
                     <div className="timeline-content">
                         <div className="timeline-circle"></div>
-                        <h3>Leader of KodeRIC</h3>
+                        <h3>Leder for KodeRIC</h3>
                         <div className="timeline-year">03/2024 - Nåværende</div>
                         <div className="timeline-company">Universitetet i Agder, Grimstad, Norge</div>
                         <ul className="timeline-description">
